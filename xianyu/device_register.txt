@@ -1,0 +1,767 @@
+//frida -U -f  com.taobao.idlefish -l hook.js --no-pause
+// search mtop.sys.newdeviceid
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.sys.newdeviceid","appKey":"21407387","data":"{\"new_device\":\"true\",\"c4\":\"\",\"c5\":\"unknown\",\"c6\":\"6774af70b76426f1\",\"device_global_id\":\"YDNW07NHhDoDALvY76Xewc3Y\",\"c0\":\"google\",\"c1\":\"Pixel XL\"}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"4.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_4
+>>> result:{x-sgext=JAE1jGiA90vOVPthbLjC6IwEvAS4BK8CuQy0Fr0WrwS6BLoDugy+DLg=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_NVLDGZTsMeYW+CJK3W6FVPU+vLWu9WHkhW5O84IMIFc=, x-sign=azU7Bc002xAAJiJVNbIMxJi4zb2CRiJWJKCHkCX02Z4xZwhem87TDxeUSVtqoqclEe5YPo3tSklxVOYqcm9mAoMSg8YiRiJWIkYiVi}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.alibaba.cro.umid.reped","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"2.1.62\\\",\\\"pt\\\":\\\"1\\\",\\\"os\\\":\\\"0\\\",\\\"e\\\":\\\"1000\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"lt\\\":\\\"1616669294\\\",\\\"nv\\\":\\\"3.0\\\",\\\"body\\\":\\\"Botv08ar7AndzQxxSqT70Wb100OIZq+wfKG2lx65GvPGNuSISzkOw0hJ/9l1UfUnQ/T1JtPQ1SQKDT/u4+Hy+sLbhSkUEJ6PtO9X9s8wUzJ9R542jSsAijEbAHcTYcv25wkxeCAOLMr5+VK7TGlZnOFl+6MrNWS4iOTEq/xUvNixugmVO0oFnr/uL6rOoaUggdyCcE89n8qRDCRWTnR0t0CvK4H3/SGcsiCgzgKgy0ViGZyd1XT6+G+gviXC7JG1/34r3HlzlqJzRJG8befNkOWDi9Ws7Y+ZGHYURwFC/7eVs2DUox5kXB3qaZowMv2P4r9+aGDqh4DJ/aIXBOeBV+welSjTDvk38OagZYVdAI5YM8MkvQpYBESciWU3SrdMyHU66i5SEgZn6b3M2hwyhwgWIePP7530Pvk7glKEg8GF2bfGjXkAytel37NUpMjJZ3B7zFEwqEkQ6UDslP/blQ3efPwRfLQ/wTnJ/wlmNeAYU/4LahHePBNKnFgrc0pJhb0cpBgGsTpIhnKV3vCK39euegNoDoFkasnCheDDLSxOLtaR8WEdf0X7P4DZWPELrUBQ8eA/CLq+LSipNHH61SOQ1TI/8QnTA8xu1sqxwAOQqUqm/1D66JV7kHSaic28bO2x16MlzE+gXzEhOqQxOdVZgNwzzc94/DjDcQh/o6sNzxMJ1B2IYfH9TVye68Z5cB8SveQ899pw4iCOkGYWY7scvcMXcUTxb9nPlgQSZwQwHN+k7FhsHthc9jMyG1VQaSFcVIu0wHZILb3hAmzNAJr/Pfpg3DWqNK+LLumIQdsAskjhApc84h9Snmj1KOYVIQE7M7RSujxoAuJGIu8cn2WoxaKOLfgWPuFcaBrQL3BY1GzCrhGDNwpP41mbUJCk6k9eV06MOmDNyzwL0AdbODvuWdqINwnK/N1ST/7t2DoDd4VTHfys2WVS2qpd+hHB5oe5sJiu4AhSufbiNFpKU/0CcCJpy4ZOBbXrkUc4KqpT+rGNrfwbekwHFHS1451Ie8iC2gD5g46FSWsMitv5haxuktEtBuAgvSTu+rZI2yWSklIxKP9/yNRb6a69HGqUo1dlimSFxRAk+hsXqv3gAi8GgiArbm5FXe5e7qSgmlDV3cVQwj4FsIsiGpyVIT75DOwu7P0sE9T/1nI8hxpqLDuO3ex6ncJ2o1LRSPQCP0gGTtrQPernMRdkFWFNXONS356z6Na5h0prz/0H78Tk0+v27C/ldbCV2HMKwrZRFCfL8Bny2DibJ7ktbMxMvO3SOBczBK5Bi4W3BduIYIODt41lGNyMoe7R3czMNUNJz3GZWb9Picj4r/RiOKyUoiJ+A/yclI/pr1GYx2n5CgSAw72QQADo1jlLsGeHmM5IFFOSWoM4/s4EoH9gGwOhcB1PC9xaHCTeH604I7xudwxQD5filckSqnPPASV/UdeuYuukOBwJI38D4pgFyGT2nyRc0YeczC0MTMxIMt3klBYSQYTU0skubCg94jOg+3tWGtBJX3YWM0jUwBGRozLeI7R368WwIQ/aHoZbLR8X3JIN2A==\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_2
+>>> result:{x-sgext=JAGbH/suZOVd+mjP/xZRRh+qL6orqjysKqInuC24PKopqimtKaItois=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_iCqIZPYyaYBCir+CfxCgVYq2AJkC43WSjyfRstRaUMQ=, x-sign=azU7Bc002xAAId8gEgfUCs9HIpNvAd8h2dd659iDJOnMEPUpZrkueOrjtCyX1VpS7JmlSXCatz6MIxtdjxibdX5lfrHfMd8h3zHfId}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.edgecomputer.query","appKey":"21407387","data":"{}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_3
+>>> result:{x-sgext=JAFNBOD4fzNGLHMZ5MBKkAR8NHwwfCd6MXQ8bjduJ3wyfDJ7MnQ2dDA=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_Tk6fns04N9DztLtQSEWn783APwCom6G/OVrsq2LAcxY=, x-sign=azU7Bc002xAAJhByQhAAfG2U1WhQRhB2FoC1sBfU674DRzp+qe7hLyW0e3tYgpUFI85qHr/NeGlDdNQKQE9UIrEyseYQZhB2EGYQdh}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.common.gettimestamp","appKey":"21407387","data":"{}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"*","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_1
+>>> result:{x-sgext=JAHH3ztypLmdpqiTP0qRGt/27/br9vzw6v7n5Ovk/Pbp9unx6f7t/us=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_+9B6g1+/+PsgRv7044crD0H0eng8TBNoCQlI/WqIt6A=, x-sign=azU7Bc002xAAJnqJqjCSiSjYiNWqxnqGfHDfQH0kgU5pt1COwx6L309EEYsycv/1ST4A7tU9EpkphL76Kr8+0tvC2xZ6lnqGepZ6hn}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.wireless.home.xianyu.awesome.get","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.wireless.home.xianyu.awesome.get\",\"apiVersioin\":\"1.0\",\"cityName\":\"\",\"containerParams\":\"{\\\"xianyu_home_main\\\":{\\\"baseCacheTime\\\":\\\"1616669293923\\\",\\\"bizParams\\\":{\\\"selectedCityName\\\":\\\"北京\\\",\\\"umidToken\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\"},\\\"passParams\\\":{\\\"lastVersion\\\":\\\"v1\\\"},\\\"realBaseCacheTime\\\":\\\"1616669293923\\\",\\\"requestType\\\":\\\"coldStart\\\"}}\",\"countryName\":\"\",\"encryptUserId\":\"\",\"latitude\":\"\",\"longitude\":\"\",\"originJson\":false,\"provinceName\":\"\",\"requestType\":\"coldStart\",\"startTime\":1616669294206}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_5
+>>> result:{x-sgext=JAFa/BjvhyS+O4sOHNeyh/xrzGvIa99tyWPEecl532vKa8psymPOY8g=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_gEz8YKTpF3Zz6S5S7RYk+YEJfXV4QixfhS2C3+lw0f0=, x-sign=azU7Bc002xAAK3Hzuah9GNj4w9Ihq3H7dw3UPXZZijNiylvzyGOAokQ5GvY5D/SIQkMLk95AGeQi+bWHIcI1r9C/0Gtx63H7cetx+3}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.wireless.home.xianyu.awesome.get","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.wireless.home.xianyu.awesome.get\",\"apiVersioin\":\"1.0\",\"cityName\":\"\",\"containerParams\":\"{\\\"xianyu_home_main\\\":{\\\"baseCacheTime\\\":\\\"1616669294449\\\",\\\"bizParams\\\":{\\\"selectedCityName\\\":\\\"北京\\\",\\\"umidToken\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\"},\\\"passParams\\\":{\\\"lastVersion\\\":\\\"v1\\\"},\\\"realBaseCacheTime\\\":\\\"1616669294449\\\",\\\"requestType\\\":\\\"hotStart\\\"}}\",\"countryName\":\"\",\"encryptUserId\":\"\",\"latitude\":\"\",\"longitude\":\"\",\"originJson\":false,\"provinceName\":\"\",\"requestType\":\"hotStart\",\"startTime\":1616669294482}","extdata":"openappkey=DEFAULT_AUTH","t":"1616669295","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_6
+>>> result:{x-sgext=JAGPH/s6ZPFd7mjb/wJRUh++L74rvjy4KrYnrCmsPL4pvim5KbYttis=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_Z9FoUyhkRZcVDEVC2kY0UZO9v2aK2UarYPV8jVDRtec=, x-sign=azU7Bc002xAALABCaXhBU7UN//DQLABMBrqligfu+4QTfSpEudTxFTWOa0FIuIU/M/R6JK/3aFNTTsQwUHVEGKEIodwAbABMAGwATA}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.search.shade","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.search.shade\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669296112}","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669296","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_7
+>>> result:{x-sgext=JAE8RaGJPkIHXTJopbEL4UUNdQ1xDWYLcAV9H3IfZg1zDXMKcwV3BXE=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_Sz3aXrs99fiJZH3I29eyRMrIyM6GZolZGJWxj3iMpk0=, x-sign=azU7Bc002xAAICc7t54HA+N0+a1XQCcwIcaC9iCS3Pg0AQ04nqjWaRLyTD1vxKJDFIhdWIiLTy90MuNMdwljZIZ0hqAnICcwJyAnMC}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.edgecomputer.query","appKey":"21407387","data":"{}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669298","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_8
+>>> result:{x-sgext=JAEWLcmjVmhvd1pCzZtjyy0nHScZJw4hGC8VNRU1DicbJxsgGy8fLxk=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_sj6t0Iab13CmR9vS6uV1EYmFnl3vBs4mAHqEqmLPkoI=, x-sign=azU7Bc002xAAI+n9sFFxv/6OASF5c+nz7wVMNe5REjv6wsP7UGsYqtwxgv6hB2yA2kuTm0ZIgey68S2Pucqtp0i3SGPp0+nz6dPp8+}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idlehome.home.tabentry","appKey":"21407387","data":"{\"needCustomsUrlParams\":\"true\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669298","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_9
+>>> result:{x-sgext=JAFRfZnkBi8/MAoFndwzjH1gTWBJYF5mSGhFckRyXmBLYEtnS2hPaEk=, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_GMTjM3x9WONJYZOdWD20UX8ihwHxRxVkJLMsTLa8joU=, x-sign=azU7Bc002xAAJzes++yMEzTNw7s3NzenMVGSYTAFzG8klh2vjj/G/gJlXKp/U7LUBB9Nz5gcX7hkpfPbZ55z85bjljc3tzenN7c3pz}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idlehome.home.nextfresh","appKey":"21407387","data":"{\"abtag\":\"style_masonryLayouts_1.0_mamaAD\",\"lastResponseCount\":0,\"name\":\"推荐\",\"needBanner\":\"true\",\"needCustomsUrlParams\":\"true\",\"needMario\":\"false\",\"pageNumber\":\"1\",\"spmPrefix\":\"a2170.7897990.6801272.\",\"trackName\":\"Item\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669298","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"5.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_10
+>>> result:{x-sgext=JAGUHPghZ+pe9WvA/BlSSRylLKUopT+jKa0kty2kP7ctoi2iKqIlpiWg, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_U4Qplqon4eaZIfUOoRYHAKk8FCs7cyQsdmcNtJ6hzyk=, x-sign=azU7Bc002xAALoWWWCDoDYeX6Xw1PoWeg2ggWII8flaWr6+WPAZ0x7Bc7pPNagDttib/9iol7YHWnEHi1afByiTaJA6FjoWehY6Fno}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idlehome.home.tabentry","appKey":"21407387","data":"{\"needCustomsUrlParams\":\"true\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669299","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_11
+>>> result:{x-sgext=JAGahWEv/uTH+/LOZRfLR4Wrtauxq6atsKO9ubSrprm0rLSss6y8qLyu, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_8GqUsTjhToNcZ27W/h7JTiVqboeaNgP5PEosw9/WIwQ=, x-sign=azU7Bc002xAAJ6N6b+2WKQUB7DAzx6N3pYEGsaTVWL+wRol/Gu9SLpa1yHrrgyYEkM/ZHwzMy2jwdWcL807nIwIzAuejV6N3o1ejd6}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.ha.query","appKey":"21407387","data":"{\"bizid\":\"1\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669300","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_12
+>>> result:{x-sgext=JAGz1jIGrc2U0qHnNj6YbtaC5oLigvWE44rukOeB9ZDnheeF4IXvge+H, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_YaahTsO3VDb1+jmLIGxnDA0Pn1I5Erraj7SryPRoqmw=, x-sign=azU7Bc002xAALF7UyYYnzdDW0Kq+HF7cWCr7Gll+pRRN7XTU50SvhWseNdEWKNuvbWQktPFnNsMN3pqgDuUaiP+Y/0xezF7cXsxe3F}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.alibaba.cro.umid.networksdk.savewb","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"6.5.24\\\",\\\"e\\\":\\\"1101\\\",\\\"payload\\\":\\\"jJy9FR245+Hm+bmKim7wTuBcVkYUGAI8ExAOFrWSxjGEn4GQ+uhs7MxNoPdYLtyXGRI+x6+Azy9n0pT3klczntnluiKEhfJ5hj6oPYXiN2pFSDuWdhYpjAE3y+LSUpB1ljhLZQp8yN7HCJQEPAeLi+skBq8Hr398ES9sdpW2G+Mpxb382AH6f058bRRmzfZyYhkWIa9x23pnOhtxkzOJcNGLrPJcF1xq0TXDjUhyBgUX5a+S/HczuBj6YOZGCMMmUu/Jp4kVXIbS7TCjon9IS70aQFOmWmoL+F8Buv7+7F6kflNAulIRgO+nH4N1kiFnS8aSBV1O6eQjHajRZXjPrcu4yW8P5cnBOyuZDD8xWafJhmAy5wU7m9FuV0X6JJPqeTNTu42ulpkGy7f7KImOD9f8MSayb5Zl4AmYs4RQBXCw9iPEE8MdR4RrNy4lbyXxYhwuILaBgskPDLiWmsS8drK0flvq1PW6WLmCNVEFXIlX0p5JtbWlas5iKAcP8ktYPRtuvyhBFjgE1DDS6uKrFO9OirJT1t4glV2WTIsGuHMdPeOszvq6UnGIfZxTz9Sa1rtgHxnKyVi8UdbnpDrKNzssiGh+1cIDf4kVD415ZQ4S23rLbGEXjISzWCdYCvWU/fI5M3awiBPboa4af3nrm3hgPtw5EjnYmdJuB4+NhQlysKyMppXXGrFpy1HfGqz3Kym909ZOPO4QZO04i79+Ge65xvl6xm7sSrgeSn3aNJ1GY6lPFe2FL+NMHTsFJXXvn7Yw8Ypk9F84wPOvfAsbWAsN1aojaoC9zf1z5ueJyNFL/yc0T3H7gX31xaZcf0MT4o/otxdjSvyqc6Di9Hppqe0SbwYuo60gz1RczVlvzZs3F+cqCw48oKxanY/4pbZ1dchrvoT9PUBl4W6aIvgMWKJ7RHN1yZ60VmwkPOscdoss8j9kmL3BOmBWMN3CDiF5G3hGhKO5FWfFpv05ksbAESDdC5x5rzuRnlQNOhepqAI9CXLL7+/ojzk8FBO6maWmePwNtOlLyNI2W0udeqxJyKn4Rv1chcpmDHMsIGueJqlTny0fgJ7NPvwD0sQ/Ze1EEa/u2qwCP9CClMEnRBtTxiLzxIhbdqMoKwcwmvWImZjmcK5H64KL0iJhTflUlsvu8hNk/cEtsmuQVYwXdnJ6bx4Spdy2dO0ab8HxwblaKa9M/ReUESwM+GimciYcETdSDR8FqhiAb9FIWZ0zWJ5fmYIFZlq6hZUkhOpSPF19VAA7LJb1bD47XqQEG7AHGUQoZH8hudxe1IbUrJV7TjRRKemIBjJ6lBVSoE3sonC5Eor78ZVWegPMg8Ly4XfOyIk/foJsVumOwC1YE3zNcaZXyHU/Vc2JfGWsJ42P1g3qk08AKHVVyDI1g8b8YVoPKFsFsk8Q8LP1C+6Y2WVbcYZPRhsvSth342SGJjLOqRSA6UvBjRCdarHbiH3OtjHKB9+PzMugHkzvG9YpybF+0L8vKL6b4JLQBY/iPvAWtCpnLm/Zywh2EkUu393iFtUae68kStc5582oHBOrjsaEaXtDz2M1sWow21D71ybYqu+SlKHOzlcYDqnejwJDrUXjrzDbKaguQyC2LNJt6uTuriWdkaCGJ7yVzIFarXUqezJimveKw2zj8oKtTyxyz+5AKDePDwJF9bzmiEzAlaB2hhYQWF0LVkz3joj3+hfJSa7MIgAAdplTB+IzdsMX+o4cqc8sTiRL+VJrOK9eMjdpt+xvYKusmZj1b4eb/zUqEtm2EtVzXUCN3fLCGbZdeR2AVdBPS73kzoiTW/OOoCsto1ysQw==\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"nv\\\":\\\"1.0\\\",\\\"keyindex\\\":\\\"wb_sc_int_res_k1\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669301","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_13
+>>> result:{x-sgext=JAFrxiLevRWECrE/JuaItsZa9lryWuVc81L+SPdY5Uj3Xfdd8F3/Wf9f, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_mQazORFA2+ZxwCqpUEpW/2DjDIRI4EpZw8bR/v/2WYM=, x-sign=azU7Bc002xAAK4AqPxs5y2XdqlgA+4Arht0l7YeJe+OTGqojObNxcrXp6ybI3wVYs5P6Qy+Q6DTTKURX0BLEfyFvIbuAO4ArgDuAK4}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idlehome.home.tabentry","appKey":"21407387","data":"{\"needCustomsUrlParams\":\"true\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669304","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_14
+>>> result:{x-sgext=JAEHnXmy5nnfZupTfYrT2p02rTapNr4wqD6lJKwzviSsMawxqzGkNaQz, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_mNbbJKCWEZU8XWDk56I9Rz8oN9SVz2hXUCjYbXi95KM=, x-sign=azU7Bc002xAAJBsWlNJEqJuJs+5L9BsUHeK+0hy24NwIJTEcoozqTS7WcBlT4J5nKKxhfLSvcwtIFt9oSy1fQLpQuoQbJBsUGyQbFB}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.wlc.kgb.cfg","appKey":"21407387","data":"{\"API_ASYNC_SCAN\":\"mtop.wlc.kgb.asyncscan\",\"API_CFG\":\"mtop.wlc.kgb.cfg\",\"client\":\"{\\\"brand\\\":\\\"google\\\",\\\"hostAppName\\\":\\\"闲鱼\\\",\\\"hostPackage\\\":\\\"com.taobao.idlefish\\\",\\\"hostVersion\\\":\\\"6.9.30\\\",\\\"model\\\":\\\"Pixel XL\\\",\\\"os\\\":\\\"android\\\",\\\"sdkVersion\\\":\\\"5.0.0.4\\\",\\\"umid\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\",\\\"userId\\\":\\\"\\\",\\\"utdid\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\"}\",\"API_SYNC_SCAN\":\"mtop.wlc.kgb.syncscan\",\"API_ACCOUNT_INFO_MISC\":\"mtop.wlc.misc.account.risk\",\"API_ACCOUNT_INFO_GET\":\"mtop.taobao.aq.detection.result.get\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669305","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_15
+>>> result:{x-sgext=JAGvRKAaP9EGzjP7pCIKckSedJ5wnmeYcZZ8jHWaZ4x1mXWZcpl9nX2b, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_8UnFVzPzGr1j4lmpMwNLvlKuOR9BZbYHNsaupWBUBss=, x-sign=azU7Bc002xAALizdrb/N78aj++6MLizeKiiJGCt81xY/7wbWlUbdhxkcR9NkKqmtH2ZWtoNlRMF/3OiifOdoio2ajU4szizeLM4s3i}
+=====================================================
+
+getIMSI >>> null
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idlemtopsearch.search.shade","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.search.shade\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669306656}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669306","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"3.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_16
+>>> result:{x-sgext=JAF29BDDjwi2F4MiFPu6q/RHxEfAR9dBwU/MVcVA11XFQMVAwkDNRM1C, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_sBNOI4AmFUTPE3EMWFMSJ3wNpZ5KJ0/dpwHW953ec2U=, x-sign=azU7Bc002xAAIeUgViuZzEKIJs2kIeUh49dA5+KDHun2EM8pXLkUeNDjjiyt1WBS1pmfSUqajT62IyFdtRihdURlRLHlMeUh5THlIe}
+=====================================================
+
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"com.taobao.idle.get.nav.config","appKey":"21407387","data":"{\"apiName\":\"com.taobao.idle.get.nav.config\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669294579}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669311","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_17
+>>> result:{x-sgext=JAGBBeE0fv9H4HLV5QxLXAWwNbAxsCa2MLg9ojS2JqI0tzS3M7c8szy1, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_ISG3fit/lE8E2OvanjKuAhT6UogJ1mzChsL9F6WkaMc=, x-sign=azU7Bc002xAAJEaWyAB6xyxZA5R3hEaUQGLjUkE2vVxVpWyc/wy3zXNWLZkOYMPndSw8/OkvLosVloLoFq0CwOfQ5wRGhEaURoRGlE}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.rule.config","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.rule.config\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669294722}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669312","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_18
+>>> result:{x-sgext=JAGCH/s3ZPxd42jW/w9RXx+zL7Mrszy1KrsnoS66PKEutC60KbQmsCa2, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_+q1WYncFK/qwCTx5YIx+aCmltHRQjT//AEpGHpci8rY=, x-sign=azU7Bc002xAALKQQz7IJE6Eo0R31PKQcouoB2qO+X9S3LY4UHYRVRZHezxHs6CFvl6TedAunzAP3HmBg9CXgSAVYBYykDKQcpAykHK}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.homehint.list","appKey":"21407387","data":"{\"currentCity\":\"北京\",\"followRead\":false,\"sameCityRead\":false}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669312","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_19
+>>> result:{x-sgext=JAFDxCD2vz2GIrMXJM6KnsRy9HLwcud08Xr8YPV652D1dfV18nX9cf13, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_eZ5Pd7E5Kp/UGykDLzOixhzxailm29mNBiIsQNByaM8=, x-sign=azU7Bc002xAAI+EGk4T5K+PvoHpwM+ED5/VExeahGsvyMssLWJsQWtTBig6p92Rw0ruba064iRyyASV/sTqlV0BHQJPhE+ED4RPhA+}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.device.report","appKey":"21407387","data":"{\"action\":\"unbind\",\"apiName\":\"mtop.taobao.idle.device.report\",\"apiVersioin\":\"1.0\",\"brand\":\"google\",\"originJson\":false,\"osVersion\":\"27\",\"startTime\":1616669296260}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669312","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_20
+>>> result:{x-sgext=JAG4/hoNhca82YnsHjWwZf6JzonKid2Py4HGm8yI3ZvPjs+OyI7HiseM, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_shV/Q+L6DnkhVYhnh0cRx68t5M39Mz2C+17jsrfOA4I=, x-sign=azU7Bc002xAALIv6qIKlIAohFfJavIv8jQouOoxecDSYzaH0MmR6pb4+4PHDCA6PuETxlCRH4+PY/k+A28XPqCq4KmyL7Iv8i+yL/I}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.pagani.api.idle.fulllink.output","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.pagani.api.idle.fulllink.output\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"sceneId\":87,\"startTime\":1616669298752}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669312","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_21
+>>> result:{x-sgext=JAGg/RkVht6/wYr0HS2zff2RzZHJkd6XyJnFg8+R3oPMlsyWy5bEksSU, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_b05jTJN2ISw6kVQNC/O0ChWFg3g5rd+tapo4eRu/N14=, x-sign=azU7Bc002xAALmN+cdnTEAFed2lSLmN+ZYjGuGTcmLZwT0l22uaSJ1a8CHMriuYNUMYZFszFC2EwfKcCM0cnKsI6wu5jbmN+Y25jfm}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.wireless.home.xianyu.pubguide.awesome.get","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.wireless.home.xianyu.pubguide.awesome.get\",\"apiVersioin\":\"1.0\",\"containerParams\":\"{\\\"xianyu_pubguide_main\\\":{\\\"baseCacheTime\\\":1616669298760,\\\"passParams\\\":{\\\"lastVersion\\\":\\\"v1\\\"},\\\"realBaseCacheTime\\\":1616669298760,\\\"requestType\\\":\\\"hotStart\\\"}}\",\"originJson\":false,\"startTime\":1616669298760}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_22
+>>> result:{x-sgext=JAGgpUEV3t7nwdL0RS3rfaWRlZGRkYaXkJmdg5eShoOUlpSWk5ackpyU, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_JTFOwVTbwH0CnkM1oMwr2MRKEqUXbDqSZD7IyhzRLwI=, x-sign=azU7Bc002xAAIxxC7AUNO/fMhrN9IxxDGrW5hRvh54sPcjZLpdvtGimBd05Ut5kwL/tmK7P4dFxPQdg/THpYF70HvdMcUxxDHFMcQx}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.atlas.getbaseupdatelist","appKey":"21407387","data":"{\"androidVersion\":27,\"apiName\":\"mtop.atlas.getBaseUpdateList\",\"apiVersioin\":\"1.0\",\"brand\":\"google\",\"group\":\"fleaMarket\",\"model\":\"Pixel XL\",\"name\":\"1569390668508\",\"netStatus\":10,\"originJson\":false,\"startTime\":1616669298882,\"version\":\"6.9.30\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_23
+>>> result:{x-sgext=JAE0ziqBtUqMVblgLrmA6c4F/gX6Be0D+w32F/wH7Rf/Av8C+AL3BvcA, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_w14gRyRodfGVPmyLlZhva3KaltrJH57XC51azqHAQHQ=, x-sign=azU7Bc002xAAJT+5GK5GqOZCcVA+xT+1OUOaczgXxH0shBW9hi3O7Ap3VLh3QbrGDA1F3ZAOV6pst/vJb4x74Z7xniU/pT+1P6U/tT}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"com.taobao.idle.get.config","appKey":"21407387","data":"{\"apiName\":\"com.taobao.idle.get.config\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669298897}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_24
+>>> result:{x-sgext=JAEtfpqYBVM8TAl5nqAw8H4cThxKHF0aSxRGDkwZXQ5PG08bSBtHH0cZ, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_jmLRoCHWRXdEfh5wI4q7XFXAvua2u6j8P8gVNVXeAvg=, x-sign=azU7Bc002xAAJYAHMF87xSLSuSzxhYAFhvMlw4ene82TNKoNOZ1xXLXH6wjI8QV2s736bS++6BrTB0R50DzEUSFBIZWAFYAFgBWABY}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.activity.query","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.activity.query\",\"apiVersioin\":\"1.0\",\"bizCode\":\"home\",\"originJson\":false,\"startTime\":1616669298973,\"umid\":\"YDNW07NHhDoDALvY76Xewc3Y\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_25
+>>> result:{x-sgext=JAHqhWFf/pTHi/K+ZWfLN4Xbtdux26bdsNO9ybffpsm03LTcs9y82Lze, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_gudBL/UokEi4PJWbuzUURGtyGO5M7Y7+iyTMdrbhxkc=, x-sign=azU7Bc002xAAKSfBYFXktmOBEf7mWSfJIT+CDyBr3AE0+A3BnlHWkBILTMRvPaK6FHFdoYhyT9Z0y+O1d/BjnYaNhlkn2SfJJ9knyS}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.publish.button.list","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.publish.button.list\",\"apiVersioin\":\"4.0\",\"originJson\":false,\"startTime\":1616669299884}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"4.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_26
+>>> result:{x-sgext=JAF+nXnL5gDfH+oqffPTo51PrU+pT75JqEelXa9Ivl2sSKxIq0ikTKRK, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_8UNW5huPUqAz0+vtCO1OBOujYjTj+vB4eJm/IvYgUcs=, x-sign=azU7Bc002xAAJT2elmIJU2UKmtWcNT2VO2OYUzo3xl0upBedhA3MzAhXVph1YbjmDi1H/ZIuVYpul/npbax5wZzRnAU9hT2VPYU9lT}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.wireless.home.xianyu.pubguide.awesome.get","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.wireless.home.xianyu.pubguide.awesome.get\",\"apiVersioin\":\"1.0\",\"containerParams\":\"{\\\"xianyu_pubguide_main\\\":{\\\"baseCacheTime\\\":1616669298760,\\\"passParams\\\":{\\\"lastVersion\\\":\\\"v1\\\"},\\\"realBaseCacheTime\\\":1616669298760,\\\"requestType\\\":\\\"hotStart\\\"}}\",\"originJson\":false,\"startTime\":1616669299893}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_27
+>>> result:{x-sgext=JAFqyy/fsBSJC7w+K+eFt8tb+1v/W+hd/lPzSfld6En6XPpc/VzyWPJe, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_WYCmwC8pakBv6N9zrphycl4HeFgCaSHDwUmQf2XKR1I=, x-sign=azU7Bc002xAAJciEko3a+Snnpx0ZNciFznNtQ88nM03btOKNcR053P1Ho4iAcU32+z2y7Wc+oJqbhwz5mLyM0WnBaRXIpciFyKXIhc}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"com.taobao.idle.host.authorize","appKey":"21407387","data":"{\"apiName\":\"com.taobao.idle.host.authorize\",\"apiVersioin\":\"1.0\",\"originJson\":false,\"startTime\":1616669299918}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_28
+>>> result:{x-sgext=JAEP/hq6hXG8bolbHoKw0v4+zj7KPt04yzbGLMw33SzPOc85yDnHPcc7, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_9Xh4t8IBrCDoZUaGYVZ9xPODSJ25PLhRUm9U5+PlvDY=, x-sign=azU7Bc002xAAJA4RRcsl3KEyDu1P1A4UCOKr0gm29dwdJSQct4z/TTvWZRlG4ItnPax0fKGvZgtdFspoXi1KQK9Qr4QOBA4UDgQOFA}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.fishpool.load.face.categories","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.fishpool.load.face.categories\",\"apiVersioin\":\"2.0\",\"originJson\":false,\"startTime\":1616669300101}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669313","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"2.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_29
+>>> result:{x-sgext=JAHxhGBE/4/GkPOlZHzKLITAtMCwwKfGsci80rbIp9K1x7XHsse9w73F, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_30e8pbj3UhnwFln4XNvcY3bMp6MUbgl9F4jTVqH0u0w=, x-sign=azU7Bc002xAAK3SMs6bVZ8WIgdfVW3SLcn3RTXMpj0Nnul6DzROF0kFJH4Y8f/H4RzMO49swHJQnibD3JLIw39XP1Rt0m3SLdJt0i3}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.homehint.list","appKey":"21407387","data":"{\"currentCity\":\"北京\",\"followRead\":false,\"sameCityRead\":false}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669314","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_30
+>>> result:{x-sgext=JAFzpkLG3Q3kEtEnRv7orqZClkKSQoVEk0qeUJVDhVCXRZdFkEWfQZ9H, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_yxWwFzCJdODeVXcfofiTrPcjPoZ0eOKyezcdqWWBETM=, x-sign=azU7Bc002xAAIMcLWMUrnsB7dSUW4McAwfZixsCiPMjUMe0Ifpg2WfLCrA2P9EJz9Li9aGi7rx+UAgN8lzmDVGZEZpDHIMcAxyDHAM}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.user.action.strategy","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.user.action.strategy\",\"apiVersioin\":\"2.0\",\"originJson\":false,\"startTime\":1616669303931}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669314","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"2.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_31
+>>> result:{x-sgext=JAGiyy8XsNyJw7z2Ky+Ff8uT+5P/k+iV/pvzgfiT6IH6lPqU/ZTykPKW, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_b+BlGWZVaBcaNQHGP0vQdW7hTljjwVvX/WoKNmwjCmE=, x-sign=azU7Bc002xAAJWLd88zfNzWyJmMTJWLVZCPHE2V3mR1x5Ejd202TjFcXCdgqIeemUW0Yvc1uCsox16apMuwmgcORw0VixWLVYsVi1W}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.trigger.action","appKey":"21407387","data":"{\"bizCode\":\"cep_enter_930fish\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669314","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_32
+>>> result:{x-sgext=JAE+/RmLhkC/X4pqHbOz4/0PzQ/JD94JyAfFHc4M3h3MCMwIywjEDMQK, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_FBl6lRBFxZF+Fg8tGNjIls2lvAocuanrTqe9z1ra2zY=, x-sign=azU7Bc002xAAKoETvERxo/wUByojGoEah+wk3Ia4etKSK6sSOIJwQ7TY6hfJ7gRpsqL7ci6h6QXSGEVm0SPFTiBeIIqBCoEagQqBGo}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.division.by.gps","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.division.by.gps\",\"apiVersioin\":\"1.0\",\"latitude\":22.631629,\"longitude\":114.063737,\"originJson\":false,\"startTime\":1616669311279}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669314","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_33
+>>> result:{x-sgext=JAEGhGCz/3jGZ/NSZIvK24Q3tDewN6cxsT+8Jbc1pyW1MLUwsjC9NL0y, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_kW9JeTCWEN+Ha8dy1wfRaG1XCZwKRH+2NjVVdpJPbCE=, x-sign=azU7Bc002xAAIH2HoK4bZHgjNbH/kH2Ae3bYRnoihkhusVeIxBiM2UhCFo01dPjzTjgH6NI7FZ8ugrn8Lbk51NzE3BB9kH2AfZB9gH}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMEI >>> 352530083574053
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.alibaba.cro.umid.channel.networksdk.data","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"6.5.24\\\",\\\"e\\\":\\\"9000\\\",\\\"payload\\\":\\\"6Q6KweKt9WAvDCObJKouj4o0zBl8OWHbNDR7LJJJlkcaidgSbru6oJPD4D2mSCEQrAmP2VtfxtPBO9eXuYeWcR3iQGC6vvMSYJqIGhJ8+Uau2gjl1e0BzgIknoZl9lbJAAlCZ+xo6n139/Yfj4xk392M2ZNHlO7IYAiuKtF+KiVXCWHKYQjfvRZSKnBmen1WGklrIdukUFn7SPRRz2CTrJoZKqVUgcUu71XNqCZPUGDkVBREiVqaKW3LjQfbhp5dn8Ui1QWT7h+FJw/BlziT/icJfeUJ5t9bHXVuRMb+9szvUXbOot2OzSrwc69zXvBv2O9895KEzUdmZmVHcvdiI8DwhVoFvLM1VGGXkQFB1UT6lvxW/Ler22GHVU1s3joVrjg8PfP+47ZQKs/62NCYiKmNs/kyEVrtvRKzh6dB5BjH4f1NoaCiOXWEHM7l47ELkLShmgLeJh2uY1hQJuJER6/QTUqwtrouZgy1luQgDrWGpgv/UZZ5SBCx8AJo6J9k4bnmCSz5Nws8UnMzOMdfOxoOAPx2BmEKErzcxrR/6sQtWCpyGz5iyU95NEw5CwQvC1y0AXsU/vERfHwJDNyzPa6SC8XanCtuc1r1Eq1kL8AnYIpYy5Xb29KlgwSUgcoiFK5AwLf+vpRaDHR11K7vx9WI/Qkt8szsumqVLWsgDhEi3U7tvbg1uqvwkHGYeAa8JVy1f56nmK5qhD+bwiHTf2AUbIXGGViO8EHRsMcAzjLlK3h9ZlUtm82F8owAz31SBNev10BArtc3HkWKietIeAO4erHe1tsTDJYOxhzrQd1FnZ0pTEfjzrBqMkmspj4oZ8tOV37pPaYg5kcOJ5OGorUWWfEJOY2O3n5mUpV4o8ZqNxGVfz30QSsMK9aFMDFu0b9as+0F5HGIDkZiLE9leU346I0tuZv07megEA3l3PAOOOH2KhfYARopSqMrwaESGLGnu6xXn6+rKBs1Zh49Oqb6LPJk4gdu+kOf9Fcs5PnWybtdby56359eEkfYWmw2wxG7iWJ2yTtNdFpBHVt/vXpkDQFiNdN0EG/V61g+/kxtDtNScxIJ03epZ/6d9XoDerRjtZkWIVtgP+SINvDhwGnRQe2AC5UNJ/5G8hRBmh8+UPafYS1oVMdcPXJXQghBGzkAS/io4clfLwo6BcmXC7VZ35TEtB5mdEOUNs3HV6JOfDh/4BUjUUW47/5x3I0owESow5Ilz8Rb7dLqxorRBjaSmsB7MPKc3rcul5VhTBuSqVvu/+TI5KDbuWkFLJPulvx0vGwUY3qQ1UdCTrjzrVDGhdq/0Tsz85Q8Exe53oYDPVPO47AlcwNthx3+g1MCbVjRdwa/bTT1xJNU3VCdudWryhdu+02w4WzNPERPLTFFmjEk1qVSePVZCnvBUuqNzWZXA7XJUA3q9ozfm7gwhrpls98cbzQsCv8IqesHNnpCDnBG9eQGWVTl9d3W6SBwg94Efc86NlOXU+pr9EZN51h3ywLuMnocMqlJQgmn35+lPYFikgnzDaOEVheoahobW8cY+XMx1b2cxlj9vHR2IHikvZNi4A7LT2r3C7qtSCETB2SckciT50TgtugvFom5jQoYCQsE3YKF8h7ojr8RV68ve9kWKm7O/2/+lIpajdmqmP0uqxJeDHVgByjMibXHlWfVS1grQZo9Km2gTvJ/hWu798qky4HH2GTH+vgO39XNzxb7PWZNm+y6DcuChKUrTO4aIL9LpXUFabnbCJwCyiZZQ1lY/pvt/bN0y6hV5yw=\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"nv\\\":\\\"1.0\\\",\\\"keyindex\\\":\\\"wb_sc_int_res_k1\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669314","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_34
+>>> result:{x-sgext=JAH0J8NBXIpllVCgx3lpKSfFF8UTxQTDEs0f1xTABNcWwhbCEcIexh7A, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_CIEMIs6WOflJbEd+fuoc65q3J5XgESB8/Bk2DV6gj4Q=, x-sign=azU7Bc002xAAJSRZ7mRiZ64HpDrGdSRVIqOBkyP33503ZA5dnc3VDBGXT1hsoaEmF+1ePYvuTEp3V+ApdGxgAYURhcUkRSRVJEUkVS}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.mach.advertise.output","appKey":"21407387","data":"{\"resourceId\":\"264\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"0","lng":"0","t":"1616669316","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"1051"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_35
+>>> result:{x-sgext=JAGSboonFews8xnGjh8gT26jXqNao02lW6tWsV2nTbFfpF+kWKRXoFem, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_pBxFa3dJr0oh7ZV3kCPOTH1UqfVwuO2uYalK+apB2E0=, x-sign=azU7Bc002xAAJzsVTLurML2/Lu1ZJzsXPeGe0Ty1wN8oJhEfgo/KTg7VUBpz475kCK9Bf5SsUwhoFf9ray5/Q5pTmoc7BzsXOwc7Fz}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.tmall.kangaroo.core.service.route.pagerecommendservice","appKey":"21407387","data":"{\"backupParams\":\"\",\"cookie\":\"\",\"url\":\"https:\\/\\/fleamarket.taobao.com\\/wow\\/z\\/activity\\/v1\\/idile-szpaz?wh_biz=tm#%7B%22crowdTags%22%3A%5B%22abc%22%5D%7D\",\"useDataService\":\"false\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669316","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"1051"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_36
+>>> result:{x-sgext=JAFnvlrSxRn8BskzXurwur5WjlaKVp1Qi16GRI1RnUSPUY9RiFGHVYdT, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_/CsRclfp53bXp/oXgQQ2C5MRTMmnDPtws6+gFy2ZYlw=, x-sign=azU7Bc002xAAJLK/K9oS/gCJaaOQ9LK0tEIXcrUWSXyhhZi8CyxD7Yd22bn6QDfHgQzI3B0P2qvhtnbI4o324BPwEySypLK0sqSytL}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMEI >>> 352530083574053
+getIMSI >>> null
+getIMEI >>> 352530083574053
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.wlc.kgb.syncscan","appKey":"21407387","data":"{\"data\":\"{\\\"apps\\\":[{\\\"appName\\\":\\\"WiFi ADB\\\",\\\"certMd5\\\":\\\"ba5864fdc79587d7502dcb5679650815\\\",\\\"data\\\":\\\"7d3f0c56e7e5a1bbcdf629dcea75abf1\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2017-01-01 20:34:22\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325011,\\\\\\\"tfcElapsed\\\\\\\":83273140,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.ttxapps.wifiadb\\\",\\\"installTime\\\":\\\"2017-01-01 20:34:22\\\",\\\"pkgName\\\":\\\"com.ttxapps.wifiadb\\\",\\\"size\\\":1201728,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"2.1.3\\\"},{\\\"appName\\\":\\\"抖音短视频\\\",\\\"certMd5\\\":\\\"aea615ab910015038f73c47e45d21466\\\",\\\"data\\\":\\\"7cd02d62aa3518c64dcc27ac0a9a164b\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-23 11:49:17\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325017,\\\\\\\"tfcElapsed\\\\\\\":83273146,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.ss.android.ugc.aweme\\\",\\\"installTime\\\":\\\"2021-03-23 11:49:17\\\",\\\"pkgName\\\":\\\"com.ss.android.ugc.aweme\\\",\\\"size\\\":84612796,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"11.9.0\\\"},{\\\"appName\\\":\\\"豌豆荚\\\",\\\"certMd5\\\":\\\"bf2aae1159354601d9100b052ad0d498\\\",\\\"data\\\":\\\"23a8ceb94a86880d597460026e71bb98\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-02-22 15:01:31\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325023,\\\\\\\"tfcElapsed\\\\\\\":83273153,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.wandoujia.phoenix2\\\",\\\"installTime\\\":\\\"2021-02-22 15:01:31\\\",\\\"pkgName\\\":\\\"com.wandoujia.phoenix2\\\",\\\"size\\\":13681595,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"6.21.21\\\"},{\\\"appName\\\":\\\"MT管理器\\\",\\\"certMd5\\\":\\\"1a32f661095560285c0f7ea0b521cb45\\\",\\\"data\\\":\\\"164d124799ed55951705771968b05791\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:25:00\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325028,\\\\\\\"tfcElapsed\\\\\\\":83273157,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"bin.mt.plus\\\",\\\"installTime\\\":\\\"2021-03-20 22:25:00\\\",\\\"pkgName\\\":\\\"bin.mt.plus\\\",\\\"size\\\":9693074,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"2.9.6\\\"},{\\\"appName\\\":\\\"HelloJni\\\",\\\"certMd5\\\":\\\"c06258bec00a1d4d2ecbd9fe7a362e49\\\",\\\"data\\\":\\\"c7fb88c519d33acfad4e4bfea785825e\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-13 20:06:49\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325031,\\\\\\\"tfcElapsed\\\\\\\":83273161,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.example.hellojni_sign2\\\",\\\"installTime\\\":\\\"2021-03-13 20:06:49\\\",\\\"pkgName\\\":\\\"com.example.hellojni_sign2\\\",\\\"size\\\":2085992,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"2.0.9\\\"},{\\\"appName\\\":\\\"拼多多\\\",\\\"certMd5\\\":\\\"6e26e5a980e0ba33fe2e4ef23607dc54\\\",\\\"data\\\":\\\"2dca0ee8f76d49ff82831fa14581ce9c\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-18 12:10:49\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325037,\\\\\\\"tfcElapsed\\\\\\\":83273167,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.xunmeng.pinduoduo\\\",\\\"installTime\\\":\\\"2021-03-18 12:10:49\\\",\\\"pkgName\\\":\\\"com.xunmeng.pinduoduo\\\",\\\"size\\\":41325509,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"5.54.0\\\"},{\\\"appName\\\":\\\"闲鱼\\\",\\\"certMd5\\\":\\\"97ec6f1007e71b11234488b2cd790638\\\",\\\"data\\\":\\\"\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-21 13:55:33\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325040,\\\\\\\"tfcElapsed\\\\\\\":83273169,\\\\\\\"tfcReceive\\\\\\\":447582577,\\\\\\\"tfcSend\\\\\\\":389998815}\\\",\\\"id\\\":\\\"com.taobao.idlefish\\\",\\\"installTime\\\":\\\"2021-03-21 13:55:33\\\",\\\"pkgName\\\":\\\"com.taobao.idlefish\\\",\\\"size\\\":106007789,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"6.9.30\\\"},{\\\"appName\\\":\\\"Postern\\\",\\\"certMd5\\\":\\\"44da4c56d3a78a1f24d1a5b7b36ca246\\\",\\\"data\\\":\\\"8b63e9aebc55ce32a0d29f5e6dcd96b7\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2017-01-01 20:32:13\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325046,\\\\\\\"tfcElapsed\\\\\\\":83273175,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.tunnelworkshop.postern\\\",\\\"installTime\\\":\\\"2017-01-01 20:32:13\\\",\\\"pkgName\\\":\\\"com.tunnelworkshop.postern\\\",\\\"size\\\":4543886,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"3.1.3\\\"},{\\\"appName\\\":\\\"AlgorithmBase\\\",\\\"certMd5\\\":\\\"b8622a52ab26b5806f945d4b35e6b67a\\\",\\\"data\\\":\\\"40d40f7352fd164f950acc96bf9ad3aa\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-06 21:39:17\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325050,\\\\\\\"tfcElapsed\\\\\\\":83273179,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.kanxue.algorithmbase\\\",\\\"installTime\\\":\\\"2021-03-06 21:39:17\\\",\\\"pkgName\\\":\\\"com.kanxue.algorithmbase\\\",\\\"size\\\":3178468,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"7.1\\\"},{\\\"appName\\\":\\\"HttpCanary\\\",\\\"certMd5\\\":\\\"2e483be64c29171caa51167a09ecaf61\\\",\\\"data\\\":\\\"1fc802d356cd6bacafad01bccfdb9a10\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-09 00:02:22\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325056,\\\\\\\"tfcElapsed\\\\\\\":83273185,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.guoshi.httpcanary\\\",\\\"installTime\\\":\\\"2021-03-09 00:02:22\\\",\\\"pkgName\\\":\\\"com.guoshi.httpcanary\\\",\\\"size\\\":14351932,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"9.2.8.1\\\"},{\\\"appName\\\":\\\"Magisk Manager\\\",\\\"certMd5\\\":\\\"ceda68c1e174710aef58897dae6eab4f\\\",\\\"data\\\":\\\"0bfc5a310d7f363f9c9c3d5f4836d1d9\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2017-01-01 20:30:44\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325060,\\\\\\\"tfcElapsed\\\\\\\":83273190,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.topjohnwu.magisk\\\",\\\"installTime\\\":\\\"2017-01-01 20:30:44\\\",\\\"pkgName\\\":\\\"com.topjohnwu.magisk\\\",\\\"size\\\":2143331,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"7.5.1\\\"},{\\\"appName\\\":\\\"小红书\\\",\\\"certMd5\\\":\\\"6cfca61d9d1eca56844806706ba18cf7\\\",\\\"data\\\":\\\"\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:28:54\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325064,\\\\\\\"tfcElapsed\\\\\\\":83273194,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.xingin.xhs\\\",\\\"installTime\\\":\\\"2021-03-20 22:28:54\\\",\\\"pkgName\\\":\\\"com.xingin.xhs\\\",\\\"size\\\":113421948,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"6.82.0\\\"},{\\\"appName\\\":\\\"滴答清单\\\",\\\"certMd5\\\":\\\"2384b3b41777bd4b6a8132a77288a534\\\",\\\"data\\\":\\\"fe63af2829c5fe4c10dbc9deff180cff\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:29:54\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325068,\\\\\\\"tfcElapsed\\\\\\\":83273197,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"cn.ticktick.task\\\",\\\"installTime\\\":\\\"2021-03-20 22:29:54\\\",\\\"pkgName\\\":\\\"cn.ticktick.task\\\",\\\"size\\\":23035569,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"5.9.2.0\\\"},{\\\"appName\\\":\\\"Termux\\\",\\\"certMd5\\\":\\\"bd0f4d846b76723a98d977339500fcf0\\\",\\\"data\\\":\\\"84f9440f758b92c95181b5dbb1af41ab\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2017-01-01 20:32:35\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325071,\\\\\\\"tfcElapsed\\\\\\\":83273201,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.termux\\\",\\\"installTime\\\":\\\"2017-01-01 20:32:35\\\",\\\"pkgName\\\":\\\"com.termux\\\",\\\"size\\\":68420713,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"0.92\\\"},{\\\"appName\\\":\\\"快手\\\",\\\"certMd5\\\":\\\"0f938c4f0995a83c9bf31f0c64322589\\\",\\\"data\\\":\\\"b73f7d23b0b3a54b78cec6b17ef374ed\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:29:31\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325076,\\\\\\\"tfcElapsed\\\\\\\":83273205,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.smile.gifmaker\\\",\\\"installTime\\\":\\\"2021-03-20 22:29:31\\\",\\\"pkgName\\\":\\\"com.smile.gifmaker\\\",\\\"size\\\":91762369,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"8.3.30.17506\\\"},{\\\"appName\\\":\\\"哔哩哔哩\\\",\\\"certMd5\\\":\\\"7194d531cbe7960a22007b9f6bdaa38b\\\",\\\"data\\\":\\\"9c8de507469b17d94bb93ee38ed6d83a\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:28:33\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325079,\\\\\\\"tfcElapsed\\\\\\\":83273208,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"tv.danmaku.bili\\\",\\\"installTime\\\":\\\"2021-03-20 22:28:33\\\",\\\"pkgName\\\":\\\"tv.danmaku.bili\\\",\\\"size\\\":76183267,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"6.20.0\\\"},{\\\"appName\\\":\\\"美拍\\\",\\\"certMd5\\\":\\\"8e1d5ad9ea79e1b3068afa19c8e07ebe\\\",\\\"data\\\":\\\"23f5a90506b7df2c34d6ec90d886c065\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 22:31:08\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325082,\\\\\\\"tfcElapsed\\\\\\\":83273212,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.meitu.meipaimv\\\",\\\"installTime\\\":\\\"2021-03-20 22:31:08\\\",\\\"pkgName\\\":\\\"com.meitu.meipaimv\\\",\\\"size\\\":96614987,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"8.9.0\\\"},{\\\"appName\\\":\\\"crackme\\\",\\\"certMd5\\\":\\\"1fcf491f44ec30d779403b8cdb0caeef\\\",\\\"data\\\":\\\"3a3ccdb21a2e5b2c0e15f464a05c4d4c\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-06 14:15:09\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325085,\\\\\\\"tfcElapsed\\\\\\\":83273215,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.kanxue.crackme\\\",\\\"installTime\\\":\\\"2021-03-06 14:15:09\\\",\\\"pkgName\\\":\\\"com.kanxue.crackme\\\",\\\"size\\\":1667601,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"1.0\\\"},{\\\"appName\\\":\\\"爱奇艺\\\",\\\"certMd5\\\":\\\"846b46b26f2d9572124e4cfd778e8774\\\",\\\"data\\\":\\\"1e91d92254713f311cb63a48f8c4f223\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-02-22 15:04:28\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325090,\\\\\\\"tfcElapsed\\\\\\\":83273220,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.qiyi.video\\\",\\\"installTime\\\":\\\"2021-02-22 15:04:28\\\",\\\"pkgName\\\":\\\"com.qiyi.video\\\",\\\"size\\\":55345404,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"12.1.5\\\"},{\\\"appName\\\":\\\"京东\\\",\\\"certMd5\\\":\\\"e0d1a70367c58d5d41c4678dfd05f84f\\\",\\\"data\\\":\\\"\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-03-20 17:36:02\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325095,\\\\\\\"tfcElapsed\\\\\\\":83273224,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.jingdong.app.mall\\\",\\\"installTime\\\":\\\"2021-03-20 17:36:02\\\",\\\"pkgName\\\":\\\"com.jingdong.app.mall\\\",\\\"size\\\":115959020,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"9.2.2\\\"},{\\\"appName\\\":\\\"搜狗输入法\\\",\\\"certMd5\\\":\\\"15cd0088e2697091f33a2d97da2ea956\\\",\\\"data\\\":\\\"4fd73d0fa721f9c16547df1efda4f1e7\\\",\\\"extraData\\\":\\\"{\\\\\\\"firstInstallTime\\\\\\\":\\\\\\\"2021-02-22 15:03:56\\\\\\\",\\\\\\\"tfcCurrentTime\\\\\\\":1616669325099,\\\\\\\"tfcElapsed\\\\\\\":83273228,\\\\\\\"tfcReceive\\\\\\\":0,\\\\\\\"tfcSend\\\\\\\":0}\\\",\\\"id\\\":\\\"com.sohu.inputmethod.sogou\\\",\\\"installTime\\\":\\\"2021-02-22 15:03:56\\\",\\\"pkgName\\\":\\\"com.sohu.inputmethod.sogou\\\",\\\"size\\\":58052489,\\\"systemApk\\\":false,\\\"type\\\":\\\"APK_HASH_MD5\\\",\\\"version\\\":\\\"10.24\\\"}],\\\"fullScan\\\":true}\",\"API_ASYNC_SCAN\":\"mtop.wlc.kgb.asyncscan\",\"API_CFG\":\"mtop.wlc.kgb.cfg\",\"client\":\"{\\\"brand\\\":\\\"google\\\",\\\"hostAppName\\\":\\\"闲鱼\\\",\\\"hostPackage\\\":\\\"com.taobao.idlefish\\\",\\\"hostVersion\\\":\\\"6.9.30\\\",\\\"model\\\":\\\"Pixel XL\\\",\\\"os\\\":\\\"android\\\",\\\"sdkVersion\\\":\\\"5.0.0.4\\\",\\\"umid\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\",\\\"userId\\\":\\\"\\\",\\\"utdid\\\":\\\"YDNW07NHhDoDALvY76Xewc3Y\\\"}\",\"API_SYNC_SCAN\":\"mtop.wlc.kgb.syncscan\",\"API_ACCOUNT_INFO_MISC\":\"mtop.wlc.misc.account.risk\",\"API_ACCOUNT_INFO_GET\":\"mtop.taobao.aq.detection.result.get\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669325","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_37
+>>> result:{x-sgext=JAH9fZlIBoM/nAqpnXAzIH3MTcxJzF7KSMRF3k7KXt5My0zLS8tEz0TJ, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_OfrEAKxKIROprc/RbDyNkBN7k2xz4U1Xt8d4Kt1zh0A=, x-sign=azU7Bc002xAAJ0IexRdXPkhCkJmwR0IXROHn0UW1ud9RJmgf+4+zTnfVKRoK48dkca84f+2sKggRFYZrEi4GQ+NT44dCB0IXQgdCF0}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.alibaba.mum.citem.get","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"6.5.24\\\",\\\"e\\\":\\\"9007\\\",\\\"payload\\\":\\\"fhCv5FE7r5Bn4tV/R5eKlA==\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"nv\\\":\\\"1.0\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669354","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_38
+>>> result:{x-sgext=JAFJdJD8Dzc2KAMdlMQ6lHR4RHhAeFd+QXBMakdxV2pFf0V/Qn9Ne019, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_W+/ZD2srXLJkj6vyinba27nbEq96e3BCqE4kcwyr23g=, x-sign=azU7Bc002xAAKw/HnRJaDKBxCaJNqw/LCT2qDQhp9AMc+iXDtlP+kjoJZMZHP4q4PHN1o6BwZ9Rcycu3X/JLn66PrlsP2w/LD9sPyw}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.alibaba.cro.umid.reped","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"2.1.62\\\",\\\"pt\\\":\\\"1\\\",\\\"os\\\":\\\"0\\\",\\\"e\\\":\\\"1000\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"lt\\\":\\\"1616669354\\\",\\\"nv\\\":\\\"3.0\\\",\\\"body\\\":\\\"Botv08ar7AndzQxxSqT70Wb100OIZq+wfKG2lx65GvPGNuSISzkOw0hJ/9l1UfUnQ/T1JtPQ1SQKDT/u4+Hy+sLbhSkUEJ6PtO9X9s8wUzJ9R542jSsAijEbAHcTYcv25wkxeCAOLMr5+VK7TGlZnOFl+6MrNWS4iOTEq/xUvNixugmVO0oFnr/uL6rOoaUggdyCcE89n8qRDCRWTnR0t0CvK4H3/SGcsiCgzgKgy0ViGZyd1XT6+G+gviXC7JG1/34r3HlzlqJzRJG8befNkOWDi9Ws7Y+ZGHYURwFC/7eVs2DUox5kXB3qaZowMv2P4r9+aGDqh4DJ/aIXBOeBV+welSjTDvk38OagZYVdAI5YM8MkvQpYBESciWU3SrdMyHU66i5SEgZn6b3M2hwyhwgWIePP7530Pvk7glKEg8GF2bfGjXkAytel37NUpMjJZ3B7zFEwqEkQ6UDslP/blQ3efPwRfLQ/wTnJ/wlmNeAYU/4LahHePBNKnFgrc0pJhb0cpBgGsTpIhnKV3vCK39euegNoDoFkasnCheDDLSxOLtaR8WEdf0X7P4DZWPELrUBQ8eA/CLq+LSipNHH61SOQ1TI/8QnTA8xu1sqxwAOQqUqm/1D66JV7kHSaic28bO2x16MlzE+gXzEhOqQxOdVZgNwzzc94/DjDcQh/o6sNzxMJ1B2IYfH9TVye68Z5cB8SveQ899pw4iCOkGYWY7scvcMXcUTxb9nPlgQSZwQwHN+k7FhsHthc9jMyG1VQaSFcVIu0wHZILb3hAmzNAJr/Pfpg3DWqNK+LLumIQdsAskjhApc84h9Snmj1KOYVIQE7M7RSujxoAuJGIu8cn2WoxaKOLfgWPuFcaBrQL3BY1GzCrhGDNwpP41mbUJCk6k9eV06MOmDNyzwL0AdbODvuWdqINwnK/N1ST/7t2DoDd4VTHfys2WVS2qpd+hHB5oe5sJiu4AhSufbiNFpKU/0CcCJpy4ZOBbXrkUc4KqpT+rGNrfwbekwHFHS1451Ie8iC2gD5g46FSWsMitv5haxuktEtBuAgvSTu+rZI2yWSklIxKP9/yNRb6a69HGqUo1dlimSFxRAk+hsXqv3gAi8GgiArbm5FXe5e7qSgmlDV3cVQwj4FsIsiGpyVIT75DOwu7P0sE9T/1nI8hxpqLDuO3ex6ncJ2o1LRSPQCP0gGTtrQPernMRdkFWFNXONS356z6Na5h0prz/0H78Tk0+v27C/ldbCV2HMKwrZRFCfL8Bny2DibJ7ktbMxMvO3SOBczBK5Bi4W3BduIYIODt41lGNyMoe7R3czMNUNJz3GZWb9Picj4r/RiOKyUoiJ+A/yclI/pr1GYx2n5CgSAw72QQADo1jlLsGeHmM5IFFOSWoM4/s4EoH9gGwOhcB1PC9xaHCTeH604I7xudwxQD5filckSqnPPASV/UdeuYuukOBwJI38D4pgFyGT2nyRc0YeczC0MTMxIMt3klBYSQYTU0skubCg94jOg+3tWGtBJX3YWM0jUwBGRozLeI7R368WwIQ/aHoZbLR8X3JIN2A==\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669354","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_39
+>>> result:{x-sgext=JAFgyy/VsB6JAbw0K+2FvctR+1H/UehX/lnzQ/hZ6EP6VvpW/VbyUvJU, x-umt=YDNW07NHhDoDALvY76Xewc3Y, x-mini-wua=HHnB_Ysj0zoAdpEa13L0mJnxe9Aun0hQPK04b6RKMQi1n4Os=, x-sign=azU7Bc002xAAIgQ9eP+fn9KOCZt2QgQyAsSh9AOQ//oXAy46var1azHwbz9MxoFBN4p+WquJbC1XMMBOVAtAZqV2paIEEgQyBBIEMg}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMEI >>> 352530083574053
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+getIMEI >>> 352530083574053
+getIMSI >>> null
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+=====================================================
+>>> params:{"api":"mtop.taobao.idle.division.all.get","appKey":"21407387","data":"{\"apiName\":\"mtop.taobao.idle.division.all.get\",\"apiVersioin\":\"1.0\",\"gps\":\"22.631629,114.063737\",\"originJson\":false,\"startTime\":1616669356211}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669356","ttid":"1569390668508@fleamarket_android_6.9.30","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_40
+>>> result:{x-sgext=JAH39RFCjom3loKjFXq7KvXGxcbBxtbAwM7N1MHH1tTEwcTBw8HMxczD, x-umt=6mcAeZpLPDA6KQJ4aQf9OGx8AKuhhFAb, x-mini-wua=HHnB_S1ovplSjaMiH07DnUpDts60+M5uPp2Puxy6TCVOWgIYC9lSzagTMpSwt/ltaQL9FCNe3YSb1czVeWRkwCzSfS4w9UPR2CaKcjlNIxRStGDLIHzhm9Lc7zT8d/ABHLxVG, x-sign=azU7Bc002xAAJbZOYsF+BJZK6vj0xbZFsLMTg7HnTY2o48ZCL+EFhrXnJmIw1cmWMIJ2Twxd80QFR3I55nzyERcBF9W2VbZFtlW2Rb}
+=====================================================
+
+=====================================================
+>>> params:{"api":"mtop.alibaba.cro.umid.reped","appKey":"21407387","data":"{\"request\":\"{\\\"sv\\\":\\\"2.1.62\\\",\\\"pt\\\":\\\"1\\\",\\\"os\\\":\\\"0\\\",\\\"e\\\":\\\"1011\\\",\\\"pv\\\":\\\"6.9.30\\\",\\\"lt\\\":\\\"1616669369\\\",\\\"nv\\\":\\\"3.0\\\",\\\"body\\\":\\\"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\\\",\\\"pn\\\":\\\"com.taobao.idlefish\\\"}\"}","deviceId":"AjyeeVFlFXIJtMhvQ96wgdJyc0vEgJlWtFLTRPqSy3zs","extdata":"openappkey=DEFAULT_AUTH","lat":"22.631629","lng":"114.063737","t":"1616669369","utdid":"YDNW07NHhDoDALvY76Xewc3Y","v":"1.0","x-features":"27"}
+>>> ext:{"pageId":"","pageName":""}
+>>> appkey:21407387
+>>> authCode:null
+>>> useWua:false
+>>> requestId:r_41
+>>> result:{x-sgext=JAEVfpqgBWs8dAlBnpgwyH4kTiRKJF0iSyxGNkokXTZPI08jSCNHJ0ch, x-umt=6mcAeZpLPDA6KQJ4aQf9OGx8AKuhhFAb, x-mini-wua=HHnB_I3795U31rSQ40FmPxz/S/57kyEupSCpMjH5LbyVAJMP/4TB7v76uJCbum3bnXaqAnS90YhEV9/0m0Jw4MsZywEg+s155YRkkslbHovXQrqsVueR1EDLRYqB4zUb1woPl, x-sign=azU7Bc002xAALqm7kvguDl4vwHfLLqm+r0gMeK4cUna3GNm5MBoafaocOZkvLtZtL3lptBOm7L8avG3C+Yft6gj6CC65jqm+qY6pvq}
+=====================================================
+
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y
+UTDevice >>> result: YDNW07NHhDoDALvY76Xewc3Y

@@ -1,0 +1,8 @@
+objection -N -h 127.0.0.1 -p 1234 -g com.jingdong.app.mall explore
+
+
+com.jingdong.jdma.g.h.a
+com.jingdong.jdma.g.h.a(java.lang.String, java.lang.String, com.jingdong.jdma.g.b, com.jingdong.jdma.g.g)
+
+
+objection  -N -h  127.0.0.1 -p 1234  -g   com.jingdong.app.mall explore  --startup-command 'android hooking watch class com.tencent.tinker.loader.shareutil.ShareTinkerInternals' 
